@@ -11,6 +11,7 @@
 	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
 	    <link rel="stylesheet" href="css/mobile.css">
 		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/iscroll.js"></script>
 	</head>
 	<body>
 		<div class="wrapper"> <!-- Open Wrapper -->
@@ -53,8 +54,9 @@
 					Copyright 2013
 				</footer>
 			</section>
-			<section class="panelContainer addPanelBorder">
-				<content>
+
+			<section id="scrollWrapper" class="panelContainer addPanelBorder">
+				<article id="scroller">
 					<div style="margin-top: 48px;"></div>
 					<div class="LoginBox addPanelBorder">
 						<legend>LOGIN: </legend>
@@ -81,22 +83,37 @@
 									<option value="0">Chose a Site</option>
 									<option value="1">Animated Movies</option>
 								</select>
-					<div class="clearFix"></div>
 							<div>
-					<div class="clearFix"></div>
 						</form>
-					<div class="clearFix"></div>
 					</nav>
 					<div class="clearFix"></div>
-					<p>Main Display Window</p>
-					<p>Slides out of position to reveal options</p>
-				</content>
+					<div style="position: relative; margin: auto; width: 96%; background-color: #6f1115; margin-top: 15px; margin-bottom: 10px;">
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">Movie Title Goes Here</label>
+						<img style="position: relative; margin: auto; width: 96%; padding-left: 10px; padding-right: 10px;" src="img/onDemand-1.jpg" />
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">
+							Mar 1, 2013 - Sebastian Keys , Reuven , and John Jammen<br />
+							Connor Patricks gets fucked hard in a cruising bathroom<br />
+							Buy: 13.33<br />
+							Stream: .15 Kinks/min <br />
+						</label>
+					</div>
+					<div style="position: relative; margin: auto; width: 96%; background-color: #6f1115; margin-top: 15px; margin-bottom: 10px;">
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">Movie Title Goes Here</label>
+						<img style="position: relative; margin: auto; width: 96%; padding-left: 10px; padding-right: 10px;" src="img/onDemand-1.jpg" />
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">
+							Mar 1, 2013 - Sebastian Keys , Reuven , and John Jammen<br />
+							Connor Patricks gets fucked hard in a cruising bathroom<br />
+							Buy: 13.33<br />
+							Stream: .15 Kinks/min <br />
+						</label>
+					</div>
+				</article>
 			</section> 
-				<header class="optionsHeader">
-					<div class="panelTitle" style="float:left;">Kink Mobile</div>
-					<div class="panelSetup"><img src="img/19-gear.png" /></div>
-					<div class="loginButton">Login</div>
-				</header>
+			<header class="optionsHeader">
+				<div class="panelTitle" style="float:left;">Kink Mobile</div>
+				<div class="panelSetup"><img src="img/19-gear.png" /></div>
+				<div class="loginButton">Login</div>
+			</header>
 
 		</div> <!-- Close Wrapper -->
 
@@ -107,11 +124,11 @@
 					var panelWidth=(window.innerWidth)-20;
 					var panelPos = $('.panelContainer').position();
 					if (panelPos.left > 0) {
-						$('.panelContainer').animate({left: '-='+panelWidth}, 250, function(){ //alert('done');
+						$('.panelContainer').animate({left: '-='+panelWidth}, 150, function(){ //alert('done');
 							});
 						$('.loginButton').show();
 					} else {
-						$('.panelContainer').animate({left: '+='+panelWidth}, 250, function(){ //alert('done');
+						$('.panelContainer').animate({left: '+='+panelWidth}, 150, function(){ //alert('done');
 							});
 						$('.loginButton').hide();
 					}
@@ -131,6 +148,15 @@
 			function() {
 				$('#choseSite').hide();
 			})
+		</script>
+		<script>
+			var myScroll;
+			function loaded() {
+				myScroll = new iScroll('scrollWrapper');
+			}
+
+			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
 		</script>
 	</body>
 </html>

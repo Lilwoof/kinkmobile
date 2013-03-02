@@ -329,3 +329,20 @@ option {
 	background-size: 23px;
 	background: url("../img/down-arrow.png") no-repeat right;
 }
+
+.videoContainer {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	background-color:  #6f1115;
+	padding: 5px;
+
+}
+.videoContainer img {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	width: auto;
+}
