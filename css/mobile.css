@@ -1,0 +1,331 @@
+// CSS for Kink Mobile App
+
+html, body { margin: 0; padding: 0; }
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+::selection {
+	background: #f00; /* Safari */
+	}
+::-moz-selection {
+	background: #f00; /* Firefox */
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-color: #232323;
+	overflow: hidden;
+}
+
+.clearFix {
+	float: none;
+	clear: both;
+}
+.optionsContainer {
+	z-index: 50px;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #232323;
+	font-family: arial;
+	color: blue;
+	display: block;
+	//overflow: hidden;
+}
+.optionsHeader {
+	display: block;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #474747 30%, #2c2c2c 50%, #000000 82%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(30%,#474747), color-stop(50%,#2c2c2c), color-stop(82%,#000000), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+	color: #F00;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 3px 8px; 
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}
+.optionsFooter {
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #474747 30%, #2c2c2c 50%, #000000 82%, #131313 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(12%,#595959), color-stop(30%,#474747), color-stop(50%,#2c2c2c), color-stop(82%,#000000), color-stop(100%,#131313)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#474747 30%,#2c2c2c 50%,#000000 82%,#131313 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+	color: #FFF;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 3px 8px; 
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+	text-align: left;
+}
+content li {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+p {
+	font-size: 12px;
+	font-family: arial;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+hr {
+	background-color: #F00;
+	height: 3px;
+	border: 0px;
+}
+.addBorder {
+	border: 2px solid #424242;
+	border-radius: 12px;
+	padding: 5px 0px 5px 0px;
+}
+.addPanelBorder {
+	border-left: 2px solid #F00;	
+}
+.optionItemContainer {
+	margin: 2px;
+	border-radius: 6px;
+	padding-left: 15px;
+	color: #FFF;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.optionItemContainer form label {
+	font-size: 12px;
+	color: white;
+	vertical-align: center;
+	width: 200px;
+}
+.optionItemContainer form input {
+	width: 75%;
+	margin-top: 3px;
+	border: 1px solid;
+	border-color: #000 #898989 #898989 #000;
+	border-radius: 12px;
+	background-color: #646464;
+	padding-left: 10px;
+	line-height: 24px;
+	padding-right: 10px;
+	outline: 0;
+	font-weight: bold;
+	height: 24px;
+}
+.optionItemContainer form input:hover, .optionItemContainer form input:focus {
+	width: 75%;
+	margin-top: 3px;
+	border: 1px solid;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 12px;
+	background-color: #898989;
+	padding-left: 10px;
+	line-height: 24px;
+	padding-right: 10px;
+	outline: 0;
+}
+
+.panelContainer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000;
+	color: #FFF;
+	display: block;
+	padding: 2px;
+} 
+
+.panelSetup {
+	float:right;
+	margin: 3px 25px 3px 3px;
+	padding: 1px;
+	background-color: #6F1115;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+}
+.panelSetup:hover {
+	float:right;
+	padding: 1px;
+	background-color: #F00;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+}
+.loginButton {
+	float:right;
+	margin: 3px 3px 3px 3px;
+	padding: 4px;
+	background-color: #6F1115;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+	color: #FFF;
+	vertical-align: center;
+	height: 18px;
+	font-size: 14px;
+}
+.loginButton:hover {
+	float:right;
+	margin: 3px 3px 3px 3px;
+	padding: 4px;
+	background-color: #F00;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+	color: #FFF;
+}
+.LoginBox {
+	font-family: arial;
+	border: 1px solid #646464;
+	border-color: #BBB #424242 #424242 #BBB;
+	border-radius: 4px;
+	//padding: 3px;
+	margin: 3px 25px 10px 25px;
+	background-color: #232323;
+	height: 120px;
+	overflow: hidden;
+}
+.LoginBox form input {
+	width: 50%;
+	margin-top: 3px;
+	border: 1px solid;
+	border-color: #000 #898989 #898989 #000;
+	border-radius: 12px;
+	background-color: #646464;
+	padding-left: 10px;
+	line-height: 24px;
+	padding-right: 10px;
+	outline: 0;
+	font-weight: bold;
+	height: 24px;
+	float: right;
+	margin-right: 15px;
+}
+.LoginBox form input:hover, .LoginBox form input:focus {
+	width: 60%;
+	margin-top: 3px;
+	border: 1px solid;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 12px;
+	background-color: #898989;
+	padding-left: 10px;
+	line-height: 24px;
+	padding-right: 10px;
+	outline: 0;
+}
+.LoginBox form label {
+	margin-left: 10px;
+	vertical-align: center;
+}
+.logoBox {
+	width: 100%;
+}
+.logoBox img {
+	width: 100%;
+}
+.LoginBox legend {
+	display: block;
+	width: 100%;
+	background-color: #6F1115;
+	font-weight: bold;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+.loginSubmit {
+	float:right;
+	margin: 3px 25px 3px 3px;
+	padding: 4px;
+	background-color: #6F1115;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+	color: #FFF;
+	vertical-align: center;
+	height: 18px;
+	font-size: 14px;
+}
+.loginSubmit:hover {
+	float:right;
+	margin: 3px 25px 3px 3px;
+	padding: 4px;
+	background-color: #F00;
+	border: 1px solid white;
+	border-color: #000 #424242 #424242 #000;
+	border-radius: 6px;
+	color: #FFF;
+}
+
+#chooseSiteBox {
+	font-family: Arial;
+	font-weight: bold;
+	padding: 3px 10px 3px 10px;
+	height: 26px;
+}
+.redPill {
+	background: #6f1115; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6f1115 0%, #8f0222 88%, #6d0019 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6f1115), color-stop(88%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6f1115 0%,#8f0222 88%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6f1115 0%,#8f0222 88%,#6d0019 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6f1115 0%,#8f0222 88%,#6d0019 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6f1115 0%,#8f0222 88%,#6d0019 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f1115', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+
+}
+
+.styled-select select {
+	background: transparent;
+	width: 100%;
+	padding: 5px 25px 5px 5px;
+	font-size: 14px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 24px;
+	-webkit-appearance: none;
+	overflow:hidden;
+	outline: 0px;
+}
+option {
+	width: 100px;
+}
+.styled-select {
+	float: right;
+	width: 150px;
+	height: 24px;
+	border: 1 solid;
+	border-color: #000 #898989 #898989 #000;
+	border-radius: 12px;
+	background-color: #646464;
+	margin-right: 15px;
+	background-size: 23px;
+	background: url("../img/down-arrow.png") no-repeat right;
+}
