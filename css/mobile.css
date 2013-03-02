@@ -1,11 +1,14 @@
 // CSS for Kink Mobile App
 
-html, body { margin: 0; padding: 0; }
-
 * {
    margin: 0px;
    padding: 0px;
 }
+
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	background-color: #232323; }
 
 ::selection {
 	background: #f00; /* Safari */
@@ -24,7 +27,7 @@ html, body { margin: 0; padding: 0; }
 }
 #scrollWrapper {
 	position:absolute; z-index:1;
-	top:45px; bottom:48px; left:0;
+	top:40px; bottom:48px; left:0;
 	width:100%;
 	overflow:auto;
 }
@@ -120,7 +123,7 @@ hr {
 	padding: 5px 0px 5px 0px;
 }
 .addPanelBorder {
-	border-left: 2px solid #F00;	
+	//border-left: 2px solid #F00;	
 }
 .optionItemContainer {
 	margin: 2px;
@@ -243,7 +246,7 @@ hr {
 	margin-right: 15px;
 }
 .LoginBox form input:hover, .LoginBox form input:focus {
-	width: 60%;
+	width: 50%;
 	margin-top: 3px;
 	border: 1px solid;
 	border-color: #000 #424242 #424242 #000;
@@ -346,7 +349,7 @@ option {
 .videoContainer {
 	position: relative;
 	margin: auto;
-	width: 90%;
+	width: 85%;
 	margin-top: 15px;
 	margin-bottom: 5px;
 	background-color:  #6f1115;

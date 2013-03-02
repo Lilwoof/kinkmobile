@@ -126,7 +126,15 @@ var m = Math,
 
 			// Events
 			onRefresh: null,
-			onBeforeScrollStart: function (e) { e.preventDefault(); },
+			onBeforeScrollStart: function (e) { 
+				if (   e.target.tagName == "SELECT"
+		            || e.target.tagName == "INPUT"
+		            || e.target.tagName == "BUTTON"
+		            || e.target.tagName == "TEXTAREA") {
+		            return true;
+        		}				
+        		e.preventDefault(); 
+			},
 			onScrollStart: null,
 			onBeforeScrollMove: null,
 			onScrollMove: null,

@@ -99,7 +99,7 @@
 					</div>
 					<div style="position: relative; margin: auto; width: 96%; background-color: #6f1115; margin-top: 15px; margin-bottom: 10px;">
 						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">Movie Title Goes Here</label>
-						<img style="position: relative; margin: auto; width: 96%; padding-left: 10px; padding-right: 10px;" src="img/onDemand-1.jpg" />
+						<img style="position: relative; margin: auto; width: 96%; padding-left: 10px; padding-right: 10px;" src="img/onDemand-2.jpg" />
 						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">
 							Mar 1, 2013 - Sebastian Keys , Reuven , and John Jammen<br />
 							Connor Patricks gets fucked hard in a cruising bathroom<br />
@@ -107,6 +107,17 @@
 							Stream: .15 Kinks/min <br />
 						</label>
 					</div>
+					<div style="position: relative; margin: auto; width: 96%; background-color: #6f1115; margin-top: 15px; margin-bottom: 10px;">
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">Movie Title Goes Here</label>
+						<img style="position: relative; margin: auto; width: 96%; padding-left: 10px; padding-right: 10px;" src="img/onDemand-3.jpg" />
+						<label style="display: block; font-weight: bold; font-family: arial; padding: 10px;">
+							Mar 1, 2013 - Sebastian Keys , Reuven , and John Jammen<br />
+							Connor Patricks gets fucked hard in a cruising bathroom<br />
+							Buy: 13.33<br />
+							Stream: .15 Kinks/min <br />
+						</label>
+					</div>
+					<div style="height: 100px; width: 90%;">&nbsp;</div>
 				</article>
 			</section> 
 			<header class="optionsHeader">
@@ -121,7 +132,7 @@
 		$(document).ready (
 			$('.panelSetup').click(
 				function() {
-					var panelWidth=(window.innerWidth)-20;
+					var panelWidth=(window.innerWidth)-15;
 					var panelPos = $('.panelContainer').position();
 					if (panelPos.left > 0) {
 						$('.panelContainer').animate({left: '-='+panelWidth}, 150, function(){ //alert('done');
@@ -143,6 +154,7 @@
 		$('.loginButton').click (
 			function() {
 				$('.LoginBox').toggle('fast');
+				myScroll.scrollTo(0,0);
 			})
 		$('#chooseSiteInput').change(
 			function() {
